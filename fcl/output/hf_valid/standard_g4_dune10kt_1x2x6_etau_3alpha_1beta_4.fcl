@@ -4973,7 +4973,7 @@ services: {
       LongitudinalDiffusion: 4e-9
       MinNumberOfElCluster: 0
       ModBoxA: 0.91
-      ModBoxB: 0.216
+      ModBoxB: 0.218
       ModifyProtonCut: false
       NewProtonCut: 0
       OpticalParamModels: [

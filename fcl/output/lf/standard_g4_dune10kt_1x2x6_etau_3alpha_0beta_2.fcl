@@ -4972,7 +4972,7 @@ services: {
       LarqlChi0D: 1.29379e-4
       LongitudinalDiffusion: 4e-9
       MinNumberOfElCluster: 0
-      ModBoxA: 0.89
+      ModBoxA: 0.87
       ModBoxB: 0.212
       ModifyProtonCut: false
       NewProtonCut: 0
