@@ -124,7 +124,7 @@ physics: {
                DT: 8.8e-9
                G4RefTime: 0
                driftSpeed: 1.60563
-               lifetime: 30.0
+               lifetime: 30000
             }
             tool_type: "WCLS"
          }
