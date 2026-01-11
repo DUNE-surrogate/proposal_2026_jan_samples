@@ -34,7 +34,7 @@ nevt=100
 model=hn_esf
 prefix=prodaddgenie_nnbar_${model}_dune10kt_1x2x6_hf_train_etau_1alpha_3beta_0
 
-first_file_idx=400
+first_file_idx=0
 this_idx=$(( first_file_idx + jobid ))
 genie_file=prodaddgenie_nnbar_${model}_dune10kt_1x2x6_${this_idx}.root
 echo "genie_file $genie_file"
@@ -44,7 +44,7 @@ ifdh cp	/pnfs/dune/persistent/users/sungbino/surrogate/sample_prod/2026_jan_prop
 echo "again ls-ing within CONDOR_DIR_INPUT at $CONDOR_DIR_INPUT"
 ls -ltrha
 
-lar -c standard_g4_dune10kt_1x2x6_etau_1alpha_3beta_0.fcl -s ${genie_file} -n $nevt --nskip $(($nevt*$jobid)) -o ${prefix}_G4_${jobid}.root
+lar -c standard_g4_dune10kt_1x2x6_etau_1alpha_3beta_0.fcl -s ${genie_file} -n $nevt -o ${prefix}_G4_${jobid}.root
 echo "finally ls-ing within CONDOR_DIR_INPUT at $CONDOR_DIR_INPUT"
 ls -ltrha
 

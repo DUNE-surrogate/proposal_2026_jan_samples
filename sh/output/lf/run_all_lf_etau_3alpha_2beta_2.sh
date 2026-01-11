@@ -44,7 +44,7 @@ ifdh cp	/pnfs/dune/persistent/users/sungbino/surrogate/sample_prod/2026_jan_prop
 echo "again ls-ing within CONDOR_DIR_INPUT at $CONDOR_DIR_INPUT"
 ls -ltrha
 
-lar -c standard_g4_dune10kt_1x2x6_etau_3alpha_2beta_2.fcl -s ${genie_file} -n $nevt --nskip $(($nevt*$jobid)) -o ${prefix}_G4_${jobid}.root
+lar -c standard_g4_dune10kt_1x2x6_etau_3alpha_2beta_2.fcl -s ${genie_file} -n $nevt -o ${prefix}_G4_${jobid}.root
 echo "finally ls-ing within CONDOR_DIR_INPUT at $CONDOR_DIR_INPUT"
 ls -ltrha
 
